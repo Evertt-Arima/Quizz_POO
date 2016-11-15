@@ -17,7 +17,6 @@ public class Questoes {
         return alternativas;
     }
 
-    
     public void setAlternativas(String[] alternativas) {
         this.alternativas = alternativas;
     }

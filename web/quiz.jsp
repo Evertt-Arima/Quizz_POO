@@ -1,9 +1,19 @@
-
-<%@page import="br.com.domain.tpquizpoo.Quiz"%>
+<%@page import="br.com.domain.pooquiz.Quiz"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="br.com.domain.tpquizpoo.Questoes"%>
+<%@page import="br.com.domain.pooquiz.Questoes"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%
+    if (request.getParameter("teste") != null) {
+        Quiz.validarTeste(new String[] {
+            request.getParameter("0"),
+            request.getParameter("1"),
+            request.getParameter("2"),
+            request.getParameter("3"),
+        });
+        response.sendRedirect("dashboard.jsp");
+    }
+%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -14,17 +24,16 @@
         <h2>Teste</h2>
         <hr/>
         <form>
-            <%ArrayList<Questoes> test = Quiz.getTeste();%>
-            <%for(Questoes q: test){%>
+            <%ArrayList<Questoes> teste = Quiz.getTeste();%>
+            <%for(Questoes q : teste){%>
             <h4><%=q.getQuestao()%></h4>
-            <%for(String alternative: q.getAlternativas()){%>
-            <input type="radio" name="<%=test.indexOf(q)%>"
-                    value="<%=alternative%>"/> <%=alternative%>
+                <%for(String alternativa : q.getAlternativas()) {%>
+                <input type="radio" name="<%=teste.indexOf(q)%>" 
+                       value="<%=alternativa%>"/><%=alternativa%>
             <%}%>
             <hr/>
             <%}%>
             <input type="submit" name="test" value="Concluir"/>
-            
         </form>
     </body>
 </html>

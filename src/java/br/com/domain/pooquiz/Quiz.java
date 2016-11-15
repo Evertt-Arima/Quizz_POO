@@ -12,6 +12,7 @@ public class Quiz {
     
     public static ArrayList<Questoes> getTeste() {
         if (teste == null) {
+            teste = new ArrayList<>();
             Questoes q1 = new Questoes(
                     "Qual o nome dado aos monumentos de pedra encontrados na "
                             + "Ilha de Páscoa, representando rostos humanos?",
@@ -20,18 +21,16 @@ public class Quiz {
             Questoes q2 = new Questoes(
                     "Qual o nome dado à estátua antiga, composta de um corpo de"
                             + " leão e uma cabeça humana, situada ao norte do "
-                            + "Egito, no planalto de Gizé?", "Esfing"
-                                    + "e", new String[]{"Esfinge","Fênix","Orá"
-                                            + "culo de Delfos","Sátiro","Pégasus"});
+                            + "Egito, no planalto de Gizé?", "Esfinge",
+                    new String[]{"Esfinge","Fênix","Oráculo de Delfos","Sátiro","Pégasus"});
             teste.add(q2);
             Questoes q3 = new Questoes(
                     "Antiga construção, formada de círculos concêntricos de pedras"
                             + " que chegam a pesar 50 toneladas, onde acredita-se"
-                            + "ser sido construída para rituais religiosos.", "S"
-                                    + "tonehenge", new String[]{"Stonehenge","Pedra de In"
-                            + "gá na Paraíba, Brasil","Pedras guia da Geórgia, E"
-                                    + "UA","Stonehead","Pedras de Callanish, Ing"
-                                            + "laterra"});
+                            + "ser sido construída para rituais religiosos.", "Stonehenge",
+                    new String[]{"Stonehenge","Pedra de Ingá na Paraíba, Brasil",
+                        "Pedras guia da Geórgia, EUA","Stonehead","Pedras de Callanish, "
+                                + "Inglaterra"});
             teste.add(q3);
             Questoes q4 = new Questoes(
                     "Única construção feita pelo homem que restou das Sete Maravilhas "
@@ -80,11 +79,11 @@ public class Quiz {
         return teste;
     }
     
-    public static double validateTeste(String userAnswers[]){
+    public static double validarTeste(String respostaDoUsuario[]){
         int contador = 0;
         
         for(int i = 0; i < teste.size(); i++){
-            if (teste.get(i).getResposta().equals(userAnswers[i])) {
+            if (teste.get(i).getResposta().equals(respostaDoUsuario[i])) {
                 contador++;
             }
         }
@@ -97,13 +96,12 @@ public class Quiz {
         return nota;
     }
     
-    public static double get(){
+    public static double getNota(){
         return Quiz.nota;
     }
     
-    public static double getGradeAverage(){
+    public static double getMédia(){
         return Quiz.soma / (double)Quiz.contador;        
-    }
-    
+    }    
 }
  
