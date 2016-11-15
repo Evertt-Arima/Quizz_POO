@@ -16,21 +16,21 @@ public class Quiz {
             Questoes q1 = new Questoes(
                     "Qual o nome dado aos monumentos de pedra encontrados na "
                             + "Ilha de Páscoa, representando rostos humanos?",
-                    "Moais", new String[]{"Moais","Dólmens","Toltecas","Olmecas","Menires"});
+                    "Moais", new String[]{"Dólmens","Toltecas","Olmecas","Moais","Menires"});
             teste.add(q1);
             Questoes q2 = new Questoes(
                     "Qual o nome dado à estátua antiga, composta de um corpo de"
                             + " leão e uma cabeça humana, situada ao norte do "
                             + "Egito, no planalto de Gizé?", "Esfinge",
-                    new String[]{"Esfinge","Fênix","Oráculo de Delfos","Sátiro","Pégasus"});
+                    new String[]{"Fênix","Oráculo de Delfos","Sátiro","Esfinge","Pégasus"});
             teste.add(q2);
             Questoes q3 = new Questoes(
                     "Antiga construção, formada de círculos concêntricos de pedras"
                             + " que chegam a pesar 50 toneladas, onde acredita-se"
                             + "ser sido construída para rituais religiosos.", "Stonehenge",
-                    new String[]{"Stonehenge","Pedra de Ingá na Paraíba, Brasil",
+                    new String[]{"Pedra de Ingá na Paraíba, Brasil",
                         "Pedras guia da Geórgia, EUA","Stonehead","Pedras de Callanish, "
-                                + "Inglaterra"});
+                                + "Inglaterra", "Stonehenge"});
             teste.add(q3);
             Questoes q4 = new Questoes(
                     "Única construção feita pelo homem que restou das Sete Maravilhas "
@@ -41,15 +41,15 @@ public class Quiz {
             Questoes q5 = new Questoes(
                     "Bloco de granito encontrado no Egito, que contém a chave"
                             + " para a decodificação e compreensão dos hieróglifos "
-                            + "egípcios.", "Pedra de Roseta", new String[]{"Pedra de Roseta","Ro"
-                            + "chedo de Gibraltar","Pedra Negra de Caaba","Rocha"
+                            + "egípcios.", "Pedra de Roseta", new String[]{"Ro"
+                            + "chedo de Gibraltar","Pedra de Roseta","Pedra Negra de Caaba","Rocha"
                                     + " de Ayer ou Uluru","Menires de Carnac"});
             teste.add(q5);
             Questoes q6 = new Questoes(
                     "Esse templo foi originalmente construído com o intuito de "
                             + "prestar homenágens aos diversos deuses da Era Romana."
-                            + "", "Pantheon", new String[]{"Pantheon","Templo de Delfos"
-                            + "","Templo de Apolo","Parthenon","Acrópole de Aten"
+                            + "", "Pantheon", new String[]{"Templo de Delfos"
+                            + "","Templo de Apolo","Pantheon","Parthenon","Acrópole de Aten"
                                     + "as"});
             teste.add(q6);
             Questoes q7 = new Questoes(
@@ -62,13 +62,13 @@ public class Quiz {
             Questoes q8 = new Questoes(
                     "Uma das maiores maravilhas do mundo antígo visível, o Zigurate de UR,"
                             + " uma torre piramidal, semelhante a Babel, se encontra em que"
-                            + " país?", "Iraque", new String[]{"Iraque","Turquia","Irã","Egit"
-                            + "o","Jordânia"});
+                            + " país?", "Iraque", new String[]{"Turquia","Irã","Egit"
+                            + "o","Jordânia", "Iraque"});
             teste.add(q8);
             Questoes q9 = new Questoes(
                     "Uma das opções abaico está em desacordo com as demais.", "Tor"
-                            + "re de Pisa", new String[]{"Torre de Pisa","Templ"
-                            + "o de Ramsés","Templo de Dandara","Abu Simbel","Te"
+                            + "re de Pisa", new String[]{"Templ"
+                            + "o de Ramsés","Torre de Pisa","Templo de Dandara","Abu Simbel","Te"
                                     + "mplo de Ábidos"});
             teste.add(q9);
             Questoes q10 = new Questoes(
