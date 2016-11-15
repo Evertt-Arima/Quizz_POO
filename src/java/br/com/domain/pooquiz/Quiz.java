@@ -72,7 +72,8 @@ public class Quiz {
                                     + "mplo de Ábidos"});
             teste.add(q9);
             Questoes q10 = new Questoes(
-                    "1+1", "2", new String[]{"0","1","2"});
+                    "O deus grego Zeus está para Júpiter tal qual Atena está para:", 
+                    "Minerva", new String[]{"Vênus","Saturno","Diana", "Minerva"});
             teste.add(q10);
             
         }
