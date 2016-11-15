@@ -42,8 +42,8 @@ public class Quiz {
                     "Bloco de granito encontrado no Egito, que contém a chave"
                             + " para a decodificação e compreensão dos hieróglifos "
                             + "egípcios.", "Pedra de Roseta", new String[]{"Ro"
-                            + "chedo de Gibraltar","Pedra de Roseta","Pedra Negra de Caaba","Rocha"
-                                    + " de Ayer ou Uluru","Menires de Carnac"});
+                            + "chedo de Gibraltar","Pedra de Roseta","Pedra Negra de Caaba",
+                            "Rocha de Ayer ou Uluru","Menires de Carnac"});
             teste.add(q5);
             Questoes q6 = new Questoes(
                     "Esse templo foi originalmente construído com o intuito de "

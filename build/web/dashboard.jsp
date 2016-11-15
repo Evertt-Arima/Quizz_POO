@@ -1,5 +1,5 @@
 
-<%@page import="br.com.domain.tpquizpoo.Quiz"%>
+<%@page import="br.com.domain.pooquiz.Quiz"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -22,9 +22,9 @@
             <h2>Índice</h2>
             <hr/>
             <h3>Última nota:</h3>
-            <%= 100.0 * Quiz.getLastGrade()%>%
+            <%= 100.0 * Quiz.getNota()%>%
             <h3>Média:</h3>
-            <%= 100.0 * Quiz.getGradeAverage()%>%
+            <%= 100.0 * Quiz.getMédia()%>%
             <hr/>
             <a href="quiz.jsp">
                 Iniciar Teste
